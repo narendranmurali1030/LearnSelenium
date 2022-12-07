@@ -23,6 +23,7 @@ public class LearnCollections {
 		studentNames.add("AARTHI");
 		studentNames.add("KARTHIK");
 		studentNames.add("SUNDAR");
+		
 
 		// size
 		int arrayListSize = studentNames.size();

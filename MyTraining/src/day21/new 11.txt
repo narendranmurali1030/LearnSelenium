@@ -5,7 +5,7 @@ Collections
 	array => Class, non growable or length is fixed, Single / Multi Dimension
 	Collections => Interface , growable or not of fixed length, Single Dimension only
 	
-	List (I)
+	List (I) eg) studentNames 
 		implementation class ArrayList (C)
 		coming from java.util
 		it will allow duplicates
@@ -13,10 +13,31 @@ Collections
 		FIFO, insertion order will be maintained by default
 		index starts from 0
 		
-	Set (I)
+	Set (I) eg) studentRollNumber		
+		implementation class HashSet, TreeSet, LinkedHashSet (C)
+		coming from java.util
+		it will NOT allow duplicates
+		size is dynamically growable
+		order will be maintained based on the implementation class
+		index starts from 0
+		
+		Note: Everything is same as List except get method which is not applicable here
+		
+		LinkedHashSet = follows the insertion order
+		TreeSet = follow ascii order
+		HashSet = follows hashing algorithm (unknown or randomised)
+		
+		Why get method is not there ?
+			get method will not be there bcos order is not maintained in set, (order is based on the implementation class)
+			Due to which we cannot use for loop here (.get wont be here)
+			Hence We can use for each
+			
+			
+			
 		
 	
 	Map(I)
+	
 	
 Hierarchy
 	Refer Excel Sheet
