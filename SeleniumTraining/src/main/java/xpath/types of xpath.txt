@@ -1,0 +1,122 @@
+Xpath
+	XML Path
+		types
+			
+			absolute 
+				Syntax = /tagName eg) /html/body/div[2]/div[2]/div/form/p[1]/input 
+				this will follow from the root
+				faster
+				
+			relative  
+				Syntax = //tagName eg) //div 
+				this will directly get into the tag 
+				slower			
+			
+				
+				types
+					1. attribute based
+						syntax : //tagName[@attributeName='attributevalue']
+						eg: //input[@id='createLeadForm_companyName']
+						eg: //input[@value='Create Lead']	
+					
+					2. multiple attribute based
+						syntax : //tagName[@attributeName='attributevalue' and @attributeName='attributevalue']
+						syntax : //tagName[@attributeName='attributevalue' or @attributeName='attributevalue']
+						syntax : //input[not(@name='PASSWORD') and @class='inputLogin']
+						
+					3. text based
+						Syntax : //tagName[text()='textValue']
+						
+					4. partial attribute based
+						syntax : //tagName[contains(@attributeName,'attributevalue')]
+						eg: //input[contains(@name,'PostalCodeExt')]
+						
+					5. partial text based
+						Syntax : //tagName[contains(text(),'textValue')]
+						
+					6. collection/index based
+						Syntax : (your xpath)[index]
+						Note: index will start from 1
+						Note: if your index is more than 2 , then do not go for collection. Drill it down.
+						Note: last() will go to the last matching record eg)(your xpath)[last()]
+						
+					
+					advanced xpath
+					
+					7. parent to child
+						Syntax: //ParentTag/ChildTag
+						eg: //div[@id='label']/a[text()='CRM/SFA']
+						
+					8. child to parent
+						Syntax: //ChildTag/parent::ParentTag
+						eg: //a[contains(text(),'CRM/SFA')]/parent::div
+						eg: //a[contains(text(),'CRM/SFA')]/parent::div[@for='crmsfa']
+					
+					
+					9. grandparent to grandchild
+						Syntax: //GrandParentTag/ChildTag/GrandChildTag
+						eg: //div[@id='button' and @class='crmsfa']/a/img
+						
+						Syntax: //GrandParentTag//GrandChildTag
+						eg: //div[@id='button' and @class='crmsfa']//img
+						
+					10. grandchild to grandparent
+						Syntax: //GrandChildTag//ancestor::GrandParentTag
+						eg: //input/ancestor::div[@id='form']
+						
+						Syntax: //GrandChildTag/parent::FatherTag/parent::GrandFatherTag						
+						//input/parent::form/parent::div
+					
+					
+					11. younger sibling to elder sibling
+						Syntax: //YoungerSiblingTag/preceding-sibling::ElderSiblingTag
+						eg: //input[@name='USERNAME']/preceding-sibling::label
+						
+						
+					12. elder sibling to younger sibling
+						Syntax: //ElderSiblingTag/following-sibling::YoungerSiblingTag
+						eg: //label[text()='Username']/following-sibling::input
+					
+					
+					
+					13. younger cousin to elder cousin
+						Syntax: //YoungerCousin/preceding::ElderCousin
+						eg: //label[text()='Password']/preceding::label[text()='Username']
+						eg: //label[text()='Password']/preceding::input
+						
+						
+					14. elder cousin to younger cousin
+						Syntax: //ElderCousin/following::YoungerCousin
+						eg: //label[text()='Password']/following::input
+						
+						
+					15. younger cousin to elder cousin - child
+						Syntax: //YoungerCousin/preceding::ElderCousin/childTag
+						
+					16. elder cousin to younger cousin - child
+					Syntax: //ElderCousin/following::YoungerCousin/ChildTag
+					
+
+
+Browser Verification
+	title = getTitle
+	URL = getCurrentURL
+	pageSource = getPageSource()
+	
+Element Verification		
+	
+	displayed = isDisplayed
+	enabled = isEnabled
+	selected = isSelected
+	text = getText
+	getting the attribute value = getAttribute	
+	css = getCSSValue
+	location = getLocation
+	size = getSize
+	get the tag name = getTagName
+	
+	
+	
+	D:\Learning\Selenium BootCamp\MyWorkSpace\MavenProject\Unwanted\unwanted\Test.java
+	
+	

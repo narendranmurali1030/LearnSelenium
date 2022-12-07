@@ -1,0 +1,44 @@
+
+	Selenium Automation
+		is not a tool itself instead its a 3rd party library
+		
+	What can be automated using Selenium ?
+		Only web based application can be automated (within chrome, firefox, edge, IE etc.,)
+	
+		
+
+	Java Project
+		its a simple java project without any relationship to build it
+		
+	Maven Project
+		it helps to build a project
+		
+		After adding dependencies, we need to force update.. Right Click, Maven, Updated project, Force Update Project checkbox, update
+		
+	Gradle/Ant Project
+		it helps to build a project
+		
+	ChromeDriver Hierarchy
+		RemoteWebDriver => ChromiumDriver => ChromeDriver
+		
+		
+		
+	Launch Chrome browser	
+	Get the URL
+	Get the title
+	
+	Enter username
+	enter password
+	Click login button
+	Get the title
+	
+	
+	
+	D:\Training\MyTrainingTeamWorkSpace\SeleniumTraining
+	
+	
+	// ./ represents project folder /asdsd/sdfsdf/sdfsdf
+		// absolute path D:\\Training\\MyTrainingTeamWorkSpace\\SeleniumTraining\\chromedriver.exe
+		
+		
+		

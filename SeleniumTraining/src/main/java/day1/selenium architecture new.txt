@@ -1,0 +1,92 @@
+
+
+Selenium Projects
+	RemoteControl (outdated or deprecated or no longer being used)
+	Selenium Webdriver 
+		Multiple browser 
+		Multiple version of browsers
+		Multiple OS Version
+		Multiple programming languages
+	Selenium IDE (Record and Playback type)
+	Selenium Grid (API Driven testing and Grid Execution)
+		Running against multiple browser and browser version combination in different places remotely
+		
+Selenium Architecture
+	
+Why ChromeDriver ?
+
+Session ID (Everytime New)
+
+1eec40d3a5764881c92085aaee66d25075c159aa 	
+1eec40d3a5764881c92085aaee66d25075c159aa  
+1eec40d3a5764881c92085aaee66d25075c159aa   62699
+
+1eec40d3a5764881c92085aaee66d25075c159aa   62948
+
+
+
+
+navigate back
+navigate refresh
+driver close
+
+How to inspect an element ?
+
+
+
+Locators (Otherwise called as Selectors)
+	ID : Most Preferred, but when you see some numbers then do not use it
+	Name : you can use it, but when you see some numbers then do not use it	
+	LinkText : will have "a" tag which denotes its a link, you can use the text of it.  (remove trailing spaces)
+	ClassName : you can use it, but when you see whitespaces do not use it
+	Partial Link Text : similar to linktext but giving the partial locator value
+	TagName : not advised but still can be used as long as the page has only one specific tag or first matching tag
+	Xpath
+	Css
+	
+	
+	Note: 
+		locators are attributes, and its in orange color
+		text will be in black color
+		values will be in blue color
+		tags will be in purple color
+		Multi Matches means it picks up the first match from the DOM
+		No Match means NoSuchElementException (use Leafground)
+		timeout (dmti)
+			implicit wait will wait for the given duration when the element is not found
+			is defined once and applicable for all driver.findelement and findelements
+	
+	
+driver clear
+driver sendkeys enter
+driver isDisplayed
+driver is Selected
+driver sendkeys
+driver getText
+driver maximize
+
+
+
+
+
+
+Xpath
+	XML Path
+		types
+			relative  
+				Syntax = //tagName eg) //div 
+				this will directly get into the tag
+			absolute 
+				Syntax = /tagName eg) /html/body/div[2]/div[2]/div/form/p[1]/input 
+				this will follow from the root
+
+	
+
+
+
+
+
+
+
+
+
