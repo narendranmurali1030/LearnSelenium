@@ -1,0 +1,31 @@
+alerts
+	
+	pop up / dialog box which provides some information
+	
+types	
+	modal dialog
+	non modal dialog
+	
+Characteristics of Modal Dialog
+	we cannot inspect in the DOM
+	without interacting with that we cannot proceed further
+	only can be found in older applications
+	these alerts are called as JS alerts
+
+Types of alerts	
+	JS Allert will always be seen in the top middle
+	HTML alert comes from the dom and can be inspected 
+	Notification alert that appears in the top right or top left
+	authentication alert appears from server side
+	
+Exception
+		NoAlertPresentException
+		UnhandledAlertException
+	
+	
+	http://leaftaps.com/opentaps/control/main
+	
+	driver.get("https://narendran.murali:password1234@leaftaps.com/opentaps/control/main")
+	
+	
+	
