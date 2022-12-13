@@ -1,0 +1,70 @@
+
+
+WebTable
+
+	we will have rows and columns
+	might have a table tag (not necessarily)
+	tr represents tablerow
+	td represents tablecolumn / tabledata
+		
+		
+		
+		
+
+//div[contains(@class,'trainlist')]/table//tr[    1             ]/td[           1             ]
+//div[contains(@class,'trainlist')]/table//tr[2]/td[1]
+//div[contains(@class,'trainlist')]/table//tr[3]/td[1]
+
+//div[contains(@class,'trainlist')]/table//tr[1]/td[1]
+//div[contains(@class,'trainlist')]/table//tr[2]/td[2]
+//div[contains(@class,'trainlist')]/table//tr[3]/td[3]
+
+
+
+
+
+i = rowNumber
+j = columnNumber
+
+"//div[contains(@class,'trainlist')]/table//tr[" + i + "]/td[" + j + "]"
+
+
+
+
+
+"//div[contains(@class,'trainlist')]/table//tr[1]/td[" +  +"]"
+
+
+
+
+
+
+
+
+
+		row: for (int i = 0; i < rowSize; i++) {
+			column: for (int j = 0; j < columnSize; j++) {
+				
+				String value = driver.findElement(By.xpath(text)).getText();
+				System.out.println(value);
+
+			}
+
+		}
+		
+		
+		
+		
+//div[contains(@class,'trainlist')]/table//tr[" + i + "]/td[" + j + "]
+
+
+int i = 3
+i++
+
+
+Hello3World
+Hello4World
+
+"Hello" + i +  "World"
+
+
